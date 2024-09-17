@@ -1,0 +1,129 @@
+/* Footer container styles */
+.footer {
+    background-color: #f4edda;
+    color: #8a663f;
+    padding: 50px 20px;
+    position: relative;
+    bottom: 0;
+   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Footer sections */
+  .footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+  }
+  
+  /* Footer section titles */
+  .footer-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #8a663f;
+
+  }
+
+  
+  
+  /* Footer links */
+  .footer-section.links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section.links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section.links ul li a {
+    color: #8a663f;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-section.links ul li a:hover {
+    color: #a87948;
+  }
+  
+  /* Social Media icons */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: #8a663f;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    color: #a77b4d;
+  }
+  
+  /* Contact section */
+  .footer-section.contact p {
+    margin: 5px 0;
+  }
+  
+  /* Footer bottom */
+  .footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f4edda;
+    color: #8a663f;
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+ 
+  /* For tablet screens */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 20px 0;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 10px;
+  }
+
+  .footer-title {
+    font-size: 1.2rem;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
+  

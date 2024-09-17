@@ -1,0 +1,141 @@
+/* Main container for Policies and Newsletter */
+.policies-newsletter-container {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #f4edda);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Policies section */
+  .policies-section {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .policies-section h2 {
+    font-size: 2rem;
+    color: #8a663f;
+    margin-bottom: 30px;
+  }
+  
+  .policies-boxes {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .policy-box {
+    background-color: #f4edda;
+    width: 22%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .policy-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .policy-box i {
+    font-size: 2rem;
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  .policy-box p {
+
+    font-size: 1.5rem;
+    color: #8a663f;
+  }
+  
+  /* Newsletter section */
+.newsletter-section {
+  text-align: center;
+  background-color: #f4edda;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-section h2 {
+  font-size: 2rem;
+  color: #8a663f;
+  margin-bottom: 20px;
+}
+
+.newsletter-section p {
+  font-size: 1rem;
+  color: #9a6b38;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column; /* Stack input and button vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 10px; /* Space between input and button */
+}
+
+.newsletter-form input {
+  width: 100%; /* Take full width of its container */
+  max-width: 400px; /* Set a max-width to limit the input size */
+  padding: 10px;
+  border: 2px solid #8a663f;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.newsletter-form button {
+  width: 100%; /* Take full width of its container */
+  max-width: 200px; /* Set a max-width to limit the button size */
+  padding: 10px;
+  background-color: #8a663f;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #a5794a;
+}
+
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .policies-boxes {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .policy-box {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .newsletter-form input {
+      width: 60%;
+    }
+  }
+
+  
+  /* For mobile screens (max-width: 480px) */
+  @media (max-width: 480px) {
+    .policy-box {
+      width: 90%;
+    }
+  
+    .newsletter-form input {
+      width: 80%;
+    }
+  
+    .newsletter-form button {
+      width: 80%;
+    }
+  }
+  

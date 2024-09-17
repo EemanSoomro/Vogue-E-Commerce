@@ -1,0 +1,178 @@
+.products-page {
+  padding: 20px;
+  text-align: center;
+  margin-top: -50px;
+  color: #8a663f;
+}
+
+.search-bar {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 2px solid #8a663f;
+  
+}
+
+
+.sort-section {
+  position: absolute; /* Move the sort section to the corner */
+  top: 290px; /* Adjust this value to move it vertically */
+  right: 50px; /* Adjust this value to move it horizontally */
+  display: flex;
+  align-items: center;
+}
+
+.sort-section label {
+  margin-right: 10px;
+}
+
+.sort-dropdown {
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+  font-size: 19px;
+  border: 1px solid #614120;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background-color: #8a663f;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #bb9164;
+  color: white;
+}
+
+.pagination .active-page {
+  background-color: #bb9164;
+  color: white;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Category section stays in the center */
+.category-section {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.category-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.category-circle img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category-circle img:hover {
+  transform: scale(1.1);
+}
+
+.category-circle p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #614120;
+}
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .search-bar {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .sort-section {
+    position: static; /* Move sort section to the flow */
+    margin-bottom: 20px; /* Add margin for spacing */
+    top: auto;
+    right: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sort-dropdown {
+    width: 100%;
+    height: auto; /* Auto height for responsive */
+    font-size: 16px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+
+  .category-circle img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .category-circle p {
+    font-size: 14px;
+  }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .search-bar {
+    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .sort-section {
+    margin-bottom: 15px; /* Add margin for spacing */
+    flex-direction: column;
+  }
+
+  .sort-dropdown {
+    width: 100%;
+    height: auto; /* Auto height for mobile */
+    font-size: 14px;
+  }
+
+  .pagination button {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+
+  .category-circle img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .category-circle p {
+    font-size: 12px;
+  }
+}

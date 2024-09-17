@@ -1,0 +1,179 @@
+/* Checkout Page */
+.checkout-page-container {
+    background-color: #f4edda;
+    padding: 40px;
+    border-radius: 10px;
+  
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .checkout-page-container h1 {
+    color: #8a663f;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .checkout-form h2 {
+    color: #9b764f;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-form input[type="text"] {
+    padding: 10px;
+    border: 2px solid #8a663f;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .checkout-form input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .checkout-form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-form div {
+    margin-bottom: 20px;
+  }
+  
+  .order-summary {
+    background-color: #f4edda;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #8a663f;
+    margin-top: -10px;
+  }
+  
+  .order-summary p {
+    margin: 10px 0;
+    color: #8a663f;
+    font-weight: bold;
+  }
+  
+  .order-item {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+  }
+  
+  .submit-order-button {
+    padding: 10px 20px;
+    background-color: #8a663f;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+  }
+  
+  .submit-order-button:hover {
+    background-color: #a5794a;
+  }
+  /* Mobile screens (max-width: 600px) */
+@media (max-width: 600px) {
+  .checkout-page-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .checkout-form {
+    gap: 15px;
+  }
+
+  .checkout-form input[type="text"] {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .checkout-form h2 {
+    font-size: 1.2rem;
+  }
+
+  .order-summary {
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .order-summary p {
+    font-size: 0.9rem;
+  }
+
+  .submit-order-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+/* Tablet screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .checkout-page-container {
+    padding: 30px;
+    max-width: 100%;
+  }
+
+  .checkout-form h2 {
+    font-size: 1.3rem;
+  }
+
+  .checkout-form input[type="text"] {
+    font-size: 1rem;
+  }
+
+  .order-summary {
+    padding: 20px;
+    margin-top: 15px;
+  }
+
+  .order-summary p {
+    font-size: 1rem;
+  }
+
+  .submit-order-button {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+}
+
+/* Larger desktop screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .checkout-page-container {
+    max-width: 900px;
+    padding: 50px;
+  }
+
+  .checkout-form h2 {
+    font-size: 1.6rem;
+  }
+
+  .checkout-form input[type="text"] {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+
+  .order-summary {
+    padding: 25px;
+  }
+
+  .order-summary p {
+    font-size: 1.2rem;
+  }
+
+  .submit-order-button {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+  }
+}
